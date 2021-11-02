@@ -55,10 +55,10 @@ i {
 }
 
 .search-input {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
-.forecast-subtitle {
+.main-forecast {
     border: solid 1px #d59bf6;
     border-radius: 10px;
     background-color: #d59bf6;
