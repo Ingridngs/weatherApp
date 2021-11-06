@@ -16,56 +16,66 @@
 
 <body>
     <div class="container">
-        <form action="search-input">
+        <form action="search-input" id="search-form">
             <div class="input-group mb-3 search-input">
-                <input type="text" class="form-control style-input" placeholder="Enter the country's name" aria-label="Recipient's username" aria-describedby="button-addon2" id="search" />
+                <input type="text" class="form-control style-input  new-location" placeholder="Enter the country's name" aria-label="Recipient's username" aria-describedby="button-addon2" id="search" />
+                <button class="btn btn-outline-secondary style-button search-new" type="button" id="button-addon2  ">
+                Search New Location
+              </button>
         </form>
-        <button class="btn btn-outline-secondary style-button" type="button" id="button-addon2">
-                Search
+
+        <button class="btn btn-outline-secondary style-button current-location" type="button" id="button-addon2">
+                Current Location
               </button>
         </div>
-        <h1>Mexico City</h1>
+        <p id="search-location"></p>
+        <h1></h1>
+        <h2 id="description"></h2>
         <h2 id="actual-date">Date </h2>
         <span id="actual-hour">Hour</span>
-        <h3>25</h2>
-            <p><a id="celcius" href="">°C</a></p>
-            <p><a id="farengheit" href="">°F</a></p>
-            <i class="fas fa-cloud-sun icon-header"></i>
-            <p class="forecast-subtitle">Forecast for the next five days</p>
-            <div class="main-forecast">
-                <div class="row">
-                    <div class="col">
-                        <p>Monday</p>
-                        <p>22°C</p>
-                        <span><i class="fas fa-sun"></i></span>
-                    </div>
-                    <div class="col">
-                        <p>Tuesday</p>
-                        <p>21°C</p>
-                        <span><i class="fas fa-cloud-sun-rain"></i></span>
-                    </div>
-                    <div class="col">
-                        <p>Wednesday</p>
-                        <p>23°C</p>
-                        <span><i class="fas fa-sun"></i></span>
-                    </div>
-                    <div class="col">
-                        <p>Thursday</p>
-                        <p>19°C</p>
-                        <span><i class="fas fa-snowflake"></i></span>
-                    </div>
-                    <div class="col">
-                        <p>Friday</p>
-                        <p>21°C</p>
-                        <span><i class="fas fa-cloud-sun"></i></span>
-                    </div>
-
+        <h3></h3>
+        <p><a id="celcius" href="">°C</a></p>
+        <p><a id="farengheit" href="">°F</a></p>
+        <ul>
+            <li>Wind:<span id="wind"></span>km/h</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+        </ul>
+        <i class="fas fa-cloud-sun icon-header"></i>
+        <p class="forecast-subtitle">Forecast for the next five days</p>
+        <div class="main-forecast">
+            <div class="row">
+                <div class="col">
+                    <p>Monday</p>
+                    <p>22°C</p>
+                    <span><i class="fas fa-sun"></i></span>
                 </div>
-                <a href="https://github.com/Ingridngs/weatherApp">Open Sourced by Ingrid G</a>
+                <div class="col">
+                    <p>Tuesday</p>
+                    <p>21°C</p>
+                    <span><i class="fas fa-cloud-sun-rain"></i></span>
+                </div>
+                <div class="col">
+                    <p>Wednesday</p>
+                    <p>23°C</p>
+                    <span><i class="fas fa-sun"></i></span>
+                </div>
+                <div class="col">
+                    <p>Thursday</p>
+                    <p>19°C</p>
+                    <span><i class="fas fa-snowflake"></i></span>
+                </div>
+                <div class="col">
+                    <p>Friday</p>
+                    <p>21°C</p>
+                    <span><i class="fas fa-cloud-sun"></i></span>
+                </div>
+
             </div>
+            <a href="https://github.com/Ingridngs/weatherApp">Open Sourced by Ingrid G</a>
+        </div>
     </div>
 
-    <script src="src/index.js"></script>
+    <script src="src/script.js"></script>
 </body>
 
 </html>

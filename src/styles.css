@@ -25,6 +25,12 @@ i {
     color: #8ef6e4;
 }
 
+#search-location {
+    color: #8ef6e4;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
 .style-button {
     background-color: #9896f1;
     color: #fff;
